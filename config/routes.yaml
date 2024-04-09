@@ -1,0 +1,26 @@
+controllers:
+    resource: ../src/Controller/
+    type: annotation
+
+kernel:
+    resource: ../src/Kernel.php
+    type: annotation
+
+twitt:
+    path: /
+    controller: App\Controller\TwittController::index
+
+app_login:
+    path: /login
+    controller: App\Controller\SecurityController::login
+    methods: ['GET','POST']
+
+register:
+    path: /signUp
+    controller: App\Controller\RegistrationController::register
+    methods: ['GET','POST']
+  
+dashboard:
+    path: /dashboard
+    controller: App\Controller\DashboardController::index
+    methods: ['GET','POST']

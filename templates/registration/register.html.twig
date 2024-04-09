@@ -1,0 +1,50 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}SignUp in Twitter{% endblock %}
+
+{% block body %}
+    <div class="container1">
+    <div class="logo_section">
+        <div class="logo">
+            <i class="fa-brands fa-twitter twitterimg"></i>
+        </div>
+    </div>
+
+    <h2 class="heading">Create your account</h2>
+
+    {{ form_errors(registrationForm) }}
+
+    {{ form_start(registrationForm,{'attr':{'class':'Signup'}}) }}
+
+         <label for="fullname">Name</label>
+        <input type="text" id="textvalue" name="name" class="inputfield" oninput="count()">
+        <div class="fullnamevalid">
+            <div class="fullnameerror">
+                    <span class="invalid-feedback" role="alert">
+                    </span>
+            </div>
+       
+            <div class="count-word">
+                <span id="textCount">0</span><span>/50</span>
+            </div>
+        </div>
+
+        <div class="phonefield">
+            <label for="phone">Phone</label>
+            <input type="text" id="phone" name="phone" class="inputfield" >
+           
+                <span class="invalid-feedback" role="alert">
+                </span>
+        </div>
+
+        {{ form_row(registrationForm.email,{'attr':{'class':'inputfield'}}) }}
+        {{ form_row(registrationForm.plainPassword, {
+            label: 'Password'
+        },{'attr':{'class':'inputfield'}}) }}
+        {# {{ form_row(registrationForm.agreeTerms) }} #}
+
+        <input type="submit" name="submit" value="Next" class="topsubmitbutton">
+        <a href="" class=" ues_email">Use email instead</a>
+    {{ form_end(registrationForm) }}
+</div>
+{% endblock %}

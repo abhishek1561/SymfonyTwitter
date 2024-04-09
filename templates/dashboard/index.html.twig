@@ -1,0 +1,188 @@
+{% extends 'base.html.twig' %}
+{% block title %}Twitter{% endblock %}
+{% block body %}
+  <header>
+        <div class="headerbox headerbox1">
+            <a href="" class="headerlink"><i class="fa-solid fa-bolt-lightning"></i>&nbsp;Moments</a>
+            <a href="##" class="headerlink"><i class="fa-solid fa-house-chimney-user"></i>&nbsp;Home</a>
+            <a href="#" class="headerlink"><i class="fa-regular fa-bell"></i>&nbsp;Home</a>
+            <a href="#" class="headerlink"><i class="fa-regular fa-envelope"></i>&nbsp;Moments</a>
+            
+        </div>
+        <div class="headerbox">
+            <i class="fa-brands fa-twitter twitterimg"></i>
+        </div>
+        <div class="headerbox">
+            <div class="logoImg">
+                <img src="{{ asset('images/' ~ userData.profile)}}" alt="" class="ProfileLogoImg">
+            </div>
+            <div class="logoButton">
+                <a href="{{ path('app_logout') }}" class="logoutbutton headerlink">Logout</a>
+            </div>
+        </div>
+    </header>
+     <section class="secsecond">
+        <section class="profileBannerBox">
+
+            <!-- ==================== Banner Img Start =========================== -->
+            <img src="{{asset('images/' ~ data.header)}}" alt="" class="profileBannerImg">
+            <!-- ==================== Banner Img End ========================= -->
+            <div class="logoImgBox">
+                <img src="{{ asset('images/' ~ userData.profile)}}" alt="" class="ProfileLogoImg">
+            </div>
+        </section>
+    </section>
+
+    <form action="{{ path('dashboard')}}" id="profileIdit" class="profileIdit ProfileboxFile" method="post" enctype="multipart/form-data">
+        <!-- =============================================== -->
+        <section class="profileBannerBox">
+            
+            <!-- ==================== Banner Img Start =========================== -->
+            <label for="proBannerimg"><img src="" alt="" class="profileBannerImg"></label>
+            <input type="file" id="proBannerimg" name="header_pic" style="display:none">
+            <!-- ==================== Banner Img End ========================= -->
+
+            <div class="logoImgBox">
+                <img src="" alt="" onclick="logoShow()" class="ProfileLogoImg">
+
+                <!-- ============ Logo Img Start =========== -->
+                <div id="logoIditimg" class="logoIditimg">
+                    <ul class="logoiditoption">
+                        <label for="uploadlogoimg">
+                            <li>Upload photo</li>
+                        </label>
+                        <input type="file" name="profile" id="uploadlogoimg" style="display:none">
+                        <li>Remove</li>
+                        <li onclick="cancelbutton()">cancel</li>
+                    </ul>
+                </div>
+                <!-- ============= Logo Img End ============== -->
+
+            </div>
+        </section>
+        <!-- =================================================== -->
+
+
+        <!-- ----Form Start -->
+        <div id="boxForm" class="boxForm">
+            <input type="text" value="{{userData.name}}" name="name" id="name" placeholder="Full Name">
+            <input type="text" name="bio" value="{{userData.bio}}" placeholder="Bio">
+            <input type="text" name="location" value="{{userData.location}}" placeholder="Location">
+            <input type="date" name="dob" value="{{userData.dob}}" placeholder="Birthday">
+        </div>
+        <!-- ----Form End -->
+        <input type="submit" name="submit" value="submit" class="saveProfile" onclick="saveProfile()">
+    </form>
+
+
+    <button id="cancelButton1" onclick="cancelButton()" class="cancelButton">Cancel</button>
+    <button onclick="iditprofileShow();" id="IditprofileButton" class="IditprofileButton">Idit Profile</button>
+    <section class="sec-header">
+
+    </section>
+    <section class="card">
+        <div class="userProfile">
+            <h1 class="username">{{userData.name}}</h1>
+            <p class="userBio">{{userData.bio}}</p>
+            <h3 class="userLocation">{{userData.location}}</h3>
+            <h3 class="userBirthday">{{userData.dob}}</h3>
+            <h4 class="userJoinedTime">{{data.create|date('Y-m-d H:i:s') }}</h4>
+        </div>
+        {# ===============User Views Cards Start=============== #}
+        <div class="userCard">
+            <div class="userCardheader">
+                <span class="userCardName">Tweets</span>
+                <span class="userCardReplyName">Tweets & Replies</span>
+            </div>
+            <div class="userView">
+                <div class="userViewLogo">
+                    <img src="{{ asset('images/' ~ userData.profile)}}" class="userViewLogoimg" alt="">
+                </div>
+                <div class="userViewName">
+                    <h3 class="userview_UploadName">&nbsp;&nbsp;</h3><span class="userview_UploadTime">2h</span>
+                    <p class="userviewComment">just setting my twitter</p>
+                </div>
+            </div>
+            {# =====================user Post Items===================================================== #}
+            <div class="userviewpostItem">
+                <img src="{{asset('images/' ~ data.header)}}" class="userpostItem" alt="">
+            </div>
+            {# ========================================================================================== #}
+            <div class="userExpretion">
+            <a href="" style="color:black"><i class="fa-regular fa-comment"></i></a>
+           
+            <i class="fa-regular fa-heart heartcolor" id="heartcolor" onclick="heartcolor()"></i>
+            <i class="fa-solid fa-heart heartcolorfull" id="heartcolorfull" onclick="heartcolorfull()"></i>
+            <i class="fa-solid fa-retweet"></i>
+            </div>
+            {# @if(isset($comments))
+        @foreach ($comments as $comment) #}
+             <div class="commenters"> 
+                {# @if ($comment->image) #}
+                    {# <img src="" height="100" width="100" alt="Comment Image"> #}
+                {# @endif #}
+                {# @if ($comment->video) #}
+                    {# <video controls>
+                        <source src="" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video> #}
+                {# @endif #}
+                 <div class="userscomments"> 
+
+                    {# <form action="" method="POST">  #}
+                        {# <button type="submit" class="heartlikecomment"><i class="fa-solid fa-heart commentheartcolor"></i></button> #}
+                    {#</form> #}
+
+                 </div> 
+                {# <div class="usersrecomments"> #}
+                    {# <form action="" method="POST"> #}
+                        
+                        
+                        {# <button type="submit" class="replycomment">Retweet</button> #}
+                    {# </form> #}
+                {# </div> #}
+             </div> 
+        {# @endforeach
+        @endif #}
+        </div>
+        {# ==============User Views Card End===================== #}
+
+        <div class="userFollower"></div>
+    </section>
+     <script>
+    // ==========Idit Profile ========
+    function iditprofileShow() {
+
+        document.getElementById("IditprofileButton").style.display = "none";
+        document.getElementById("cancelButton1").style.display = "block";
+        document.getElementById("profileIdit").style.display = "block";
+    }
+
+    function cancelButton() {
+        document.getElementById("profileIdit").style.display = "none";
+        document.getElementById("IditprofileButton").style.display = "block";
+        document.getElementById("cancelButton1").style.display = "none";
+        document.getElementById("logoIditimg").style.display = "none";
+    }
+    // ===========================================Save Profile 
+    function saveProfile() {
+        document.getElementById("profileIdit").Submit();
+    }
+    // ========================
+    function logoShow() {
+        document.getElementById("logoIditimg").style.display = "block";
+    }
+
+    function cancelbutton() {
+        document.getElementById("logoIditimg").style.display = "none";
+    }
+    function heartcolor(){
+        document.getElementById("heartcolorfull").style.display = "block";
+        document.getElementById("heartcolor").style.display="none";
+    }
+    function heartcolorfull(){
+        document.getElementById("heartcolor").style.display="block";
+        document.getElementById("heartcolorfull").style.display="none";
+    }
+    </script>
+{% endblock %}

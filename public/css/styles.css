@@ -1,0 +1,1088 @@
+* {
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+
+.container {
+    min-height: 450px;
+    max-width: 80%;
+    margin: 10px auto;
+    background-color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.left {
+    height: 450px;
+    width: 48%;
+    /* padding: 115px 0px; */
+    background-color: #1DA1F2;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.right {
+    height: 450px;
+    width: 52%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+}
+
+.subbox {
+    height: 60px;
+    width: 100%;
+    margin: 10px 0px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    padding-left: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+
+}
+
+i {
+    font-size: 30px;
+}
+
+span {
+    font-size: 25px;
+}
+
+.formbox {
+    height: 80%;
+    width: 75%;
+}
+
+.topbox {
+    height: 55px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.topBox {
+    height: 100%;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.twitterimg {
+    font-size: 50px;
+    color: #1DA1F2;
+}
+
+.topbutton {
+    font-weight: 600;
+    color: #1DA1F2;
+    padding: 13px 15px;
+    font-size: 18px;
+    border-radius: 30px;
+    border: 2.2px solid #1DA1F2;
+    transition: .3s ease-in all;
+}
+
+.topbutton:hover {
+    color: #fff;
+    background-color: #1DA1F2;
+}
+
+.topcontent {
+    font-size: 38px;
+    font-weight: bold;
+    padding: 20px 40px 50px 25px;
+    color: black;
+}
+
+.joinTwitter {
+    font-size: 25px;
+    line-height: 40px;
+    color: #000;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+.buttonbox {
+    height: 110px;
+    width: 100%;
+}
+
+.buttonbox1 {
+    height: 55px;
+    width: 100%;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+}
+
+.buttonsign {
+    padding: 10px 200px;
+    background-color: #1DA1F2;
+    color: #fff;
+    font-weight: bold;
+    border: 2.5px solid #1DA1F2;
+    border-radius: 25px;
+    transition: .3s ease-in all;
+}
+
+.buttonsign:hover {
+    background-color: #0583d2;
+    border: 2.5px solid #0583d2;
+}
+
+.buttonlog {
+    padding: 10px 205px;
+    background-color: #fff;
+    color: #1DA1F2;
+    font-weight: bold;
+    border: 2.5px solid #1DA1F2;
+    border-radius: 25px;
+    transition: .3s ease-in all;
+}
+
+.buttonlog:hover {
+    background-color: #1DA1F2;
+    color: #fff;
+}
+
+/* Form Login Page Start */
+form {
+    width: 100%;
+    padding: 50px auto;
+}
+
+.logtwitter {
+    padding-top: 50px;
+    font-weight: bold;
+    word-spacing: 5px;
+    margin-bottom: 30px;
+}
+
+.inputbox {
+    width: 70%;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.phone,
+.password {
+    padding: 5px 10px;
+    width: 80%;
+    border: 2px solid #c0bebe;
+    border-radius: 5px;
+}
+
+input {
+    font-size: 20px;
+    margin: 0%;
+}
+.inputbox1{
+    height: 100px;
+    padding: 5px 200px 5px 5px;
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+}
+.submitbox{
+    display: inline;
+    padding: 5px;
+    margin-right: 100px;
+}
+.remember,.forgotpassdiv{
+    display: inline;
+    justify-content: center;
+    align-items: center;
+}
+.logInBox {
+    background-color: #1DA1F2;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 25px;
+    border: none;
+}
+.forgotpassword{
+    text-decoration: none;
+    color: #1DA1F2;
+}
+.newtwitter{
+    margin: 20px 0px;
+    padding: 20px 0px;
+    background-color: #f5f4f4;
+    color: #acacac;
+}
+
+/* LOgin Form End */
+
+/* Sign Up Form Start */
+.container1 {
+    width: 70%;
+    min-height: 560px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 0px 100px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.logo_section {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    padding-bottom: 10px;
+    text-align: center;
+}
+.heading {
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin: 40px 0px;
+    letter-spacing: 1.1px;
+}
+.fullnamevalid{
+    height: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.fullnameerror{
+    display: inline;
+    height: 100%;
+}
+
+.Signup .inputfield {
+    width: 100%;
+    border: none;
+    border-bottom: 3px solid #ccc;
+    transition: all ease.5s;
+    font-size: 1rem;
+    outline: none;
+
+}
+.Signup .inputfield[type=text] {
+    width: 100%;
+    box-sizing: border-box;
+    outline: none;
+    background-color: none;
+}
+
+.Signup .inputfield[type=email] {
+    width: 100%;
+    box-sizing: border-box;
+    transition: 0.5s;
+    outline: none;
+}
+
+.Signup .inputfield[type=text]:focus,.Signup .inputfield[type=password]:focus,.Signup .inputfield[type=email]:focus {
+    border-bottom: 4px solid #1da1f2;
+    height: 50px;
+    font-size: 1.4rem;
+}
+.count-word {
+    display: flex;
+    justify-content: end;
+    font-size: 1.2rem;
+}
+
+.count-word span {
+    color: #ccc;
+    font-weight: bolder;
+}
+
+.Signup .ues_email {
+    text-decoration: none;
+    font-size: 1.7rem;
+    color: #1da1f2;
+    line-height: 100px;
+
+
+}
+
+.Signup label {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ccc;
+    margin-top: 1rem;
+    display: inline-block;
+}
+.topsubmitbutton{
+    padding: 5px 10px;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    color: #1DA1F2;
+    border:2px solid #1DA1F2;
+    border-radius: 20px;
+}
+.topsubmitbutton:hover{
+    color: #fff;
+    background-color: #1DA1F2;
+}
+
+/* Sign Up Form end */
+
+
+
+/* ========================================================================================== */
+/* ---------------------------------Profile Update-------------------------------------------- */
+/* ========================================================================================== */
+header{
+    height: 50px;
+    width: 100%;
+    margin: 5px 0px;
+    padding: 0px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.headerbox{
+    height: 100%;
+    min-width:100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.headerlink{
+    color: #96c7e6;
+    text-decoration: none;
+    margin: 0px 20px;
+}
+.headerlink:hover{
+    color: #1DA1F2;
+}
+.logoImg{
+    height: 50px;
+    width: 50px;
+    background-color: #0583d2;
+    border-radius: 50%;
+}
+.logoButton{
+    margin-left: 10px;
+}
+.toplogobutton{
+    font-weight: 600;
+    background-color: #1DA1F2;
+    color: #fff;
+    padding: 10px 15px;
+    font-size: 18px;
+    border-radius: 30px;
+    border: 2.2px solid #1DA1F2;
+    transition: .3s ease-in all;
+}
+.toplogobutton:hover{
+    background-color: #0583d2;
+}
+.logoutbutton{
+    background-color: #1DA1F2;
+    color: #fff;
+    border-radius: 20px;
+    padding: 3px 10px;
+}
+.logoutbutton:hover{
+    background-color: #0583d2;
+    color: #fff;
+}
+/* Profile Banner Box Start */
+.profileBannerBox{
+    height: 200px;
+    width: 100%;
+    background-color: rgb(29, 161, 242);
+    position: relative;
+}
+.logoImgBox{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    background-color: rgb(29, 161, 242);
+    z-index: 2;
+    position: absolute;
+    top: 70px;
+    left: 20px;
+
+}
+.profileBannerImg{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    text-align: center;
+}
+.ProfileLogoImg{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    z-index: 2;
+}
+.secondheader{
+    height: 50px;
+    width: 100%;
+    border-bottom: 2px solid #ccc;    
+    position: relative;
+}
+
+.IditprofileButton{
+    padding: 5px 10px;
+    color: #1DA1F2;
+    border: 2px solid #1DA1F2;
+    border-radius: 20px;
+    position: absolute;
+    top: 270px;
+    right: 10%;
+    /* cursor: pointer; */
+}
+.IditprofileButton:hover{
+    color: #fff;
+    background-color: #1DA1F2;
+}
+#boxForm{
+    min-height: 200px;
+    width: 300px;
+    padding: 10px;
+    background-color: #bddaec;
+    position: absolute;
+    top: 280px;
+    left: 10px;
+}
+.boxForm input{
+    margin: 10px;
+    border: 2px solid #1DA1F2;
+    padding: 3px 5px;
+    border-radius: 5px;
+}
+/* .ProfileboxFile input{
+    padding: 5px 15px;
+    border: 2px solid #76beeb;
+    border-radius: 5px;
+    margin-bottom: 10px;
+} */
+.ProfileboxFile input[type=text]:hover,.ProfileboxFile input[type=text]:focus, .ProfileboxFile input[type=date]:focus{
+    border: 2px solid #1DA1F2;
+    color: #1DA1F2;
+}
+.submitbutton{
+    background-color: #1DA1F2;
+    color: #fff;
+}
+/* ========== Logo Img =========== */
+.logoIditimg{
+    height: 120px;
+    width: 150px;
+    background-color: #efe5e5;
+    border-radius: 5px;
+    display: none;
+    position: absolute;
+    top: 110px;
+    left: 20px;
+}
+.logoiditoption li{
+    text-decoration: none;
+    list-style-type: none;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+.logoiditoption li:nth-child(2){
+    border-bottom: 2px solid #ccc;
+}
+.profileIdit{
+    position: absolute;
+    display: none;
+    top: 60px;
+    left: 0;
+}
+.saveProfile{
+    padding: 1px 10px;
+    color: #1DA1F2;
+    border: 2px solid #1DA1F2;
+    border-radius: 20px;
+    position: absolute;
+    top: 210px;
+    right: 10%;
+    z-index: 2;
+}
+#cancelButton1{
+    padding: 5px 10px;
+    color: #1DA1F2;
+    border: 2px solid #1DA1F2;
+    border-radius: 20px;
+    display: none;
+    position: absolute;
+    z-index: 2;
+    top: 270px;
+    right: 18%;
+}
+.saveProfile:hover{
+    color: #fff;
+    background-color: #1DA1F2;
+}
+.secsecond{
+    width: 100%;
+    position: relative;
+}
+
+/* -=============Logo img End ===============*/
+/* Profile Banner Bos end */
+/* ============================================ */
+/* ------------------------------------------------------------------------------- */
+/* =================User views Cards Start==================================== */
+.sec-header{
+    height: 50px;
+    width: 100%;
+    border-bottom: 2px solid #d0cece;
+}
+.card{
+    min-height: 300px;
+    width: 100%;
+    padding: 25px;
+    background-color: #f1efef;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.userProfile{
+    height: 100%;
+    width:20%;
+}
+.userCard{
+    height: 100%;
+    width: 45%;
+    background-color: #fff;
+}
+.userFollower{
+    height: 100%;
+    width: 25%;
+    background-color: #ccc;
+}
+.userviewpostItem{
+    height: 250px;
+    width: 100%;
+    background-color: #1DA1F2;
+    object-fit: cover;
+}
+.userpostItem{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.commenters{
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+}
+.userscomments,.usersrecomments{
+    padding: 5px 10px;
+    display: inline;
+}
+.heartlikecomment,.replycomment{
+    border: none;
+    background-color: #fff;
+}
+.commentheartcolor{
+    color: #f00;
+}
+/* ------------  User Details   ----------------- */
+.username{
+    color: #000;
+    font-size: 28px;
+    line-height: 30px;
+}
+.userBio{
+    font-size: 18px;
+    color: #0583d2;
+    line-height: 25px;
+}
+.userLocation{
+    color: #1da1f2;
+}
+.userJoinedTime{
+    line-height: 30px;
+}
+.userCardheader{
+    height: 50px;
+    width: 100%;
+    padding:10px 25px;
+    border-bottom: 2px solid #ccc;
+}
+.userCardName{
+    margin-right: 60px;
+    font-size: 22px;
+}
+.userCardReplyName{
+    color: #1DA1F2;
+    font-size: 22px;
+}
+.userView{
+    height: 80px;
+    width: 100%;
+    display: flex;
+    
+    justify-content: start;
+    align-items: center;
+    background-color: #fff;
+}
+.userViewLogo{
+    height: 70px;
+    width: 70px;
+    margin: 0px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1DA1F2;
+    border-radius: 50%;
+}
+.userview_UploadName{
+    display: inline;
+}
+.userview_UploadTime{
+    font-size: 15px;
+}
+.userviewComment{
+    color: #696969;
+    line-height: 30px;
+}
+.userViewLogoimg{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.userExpretion{
+    height: 50px;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#heartcolorfull{
+    color: #f00;
+    display: none;
+
+}
+/* ---------------------------------------------- */
+/* ======================== User Card End=================== */
+/* -----------Comments Card Start------------------------------------ */
+.commentdiv{
+    width: 100%;
+    min-height: 500px;
+}
+.container2{
+    min-height: 300px;
+    width: 60%;
+    background-color: #dcdbdb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px auto;
+}
+.commentform{
+    min-height: 200px;
+    padding: 40px;
+    width: 90%;
+}
+.commentcontent,.commentimage,.commentvideo,.commentsubmitbutton{
+    min-height: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+.commentcontenttext,.commentimagefield,.commentvideofield{
+    width: 100%;
+    padding: 5px;
+    border: 2px solid #1DA1F2;
+}
+.commentbuttonsubmit{
+    padding: 5px 10px;
+    background-color: #1DA1F2;
+    border: 3px solid #1DA1F2;
+}
+/* -----------------------Comment Card End--------------------------- */
+/* ========================================================================================== */
+/* ------------------------------Error Message Style Text------------- */
+.errormessage{
+    font-size: 15px;
+    color: #f00;
+}
+/* ========================================================================================== */
+@media screen and (max-width:2560px){
+    .IditprofileButton{
+        top:270px;
+    }
+    /* #cancelButton1{
+        right:360px;
+    } */
+}
+@media screen and (max-width:1475px) {
+    .buttonbox1 .buttonsign {
+        padding: 10px 190px;
+    }
+
+    .buttonbox1 .buttonlog {
+        padding: 10px 190px;
+    }
+    .IditprofileButton{
+        top: 270px;
+    }
+    
+}
+
+@media screen and (max-width:1410px) {
+    .buttonbox1 .buttonsign {
+        padding: 10px 175px;
+    }
+
+    .buttonbox1 .buttonlog {
+        padding: 10px 180px;
+    }
+}
+
+@media screen and (max-width:1313px) {
+    .buttonbox1 .buttonsign {
+        padding: 10px 155px;
+    }
+
+    .buttonbox1 .buttonlog {
+        padding: 10px 160px;
+    }
+
+    .right {
+        justify-content: center;
+    }
+
+    .formbox {
+        width: 76%;
+    }
+}
+
+@media screen and (max-width:1217px) {
+    .buttonbox1 .buttonsign {
+        padding: 10px 145px;
+    }
+
+    .buttonbox1 .buttonlog {
+        padding: 10px 150px;
+    }
+
+    .right {
+        justify-content: center;
+    }
+
+    .formbox {
+        width: 78%;
+    }
+}
+/* ============================================================================================ */
+@media screen and (max-width:1121px) {
+    .buttonbox1 .buttonsign {
+        padding: 10px 135px;
+    }
+
+    .buttonbox1 .buttonlog {
+        padding: 10px 140px;
+    }
+
+    .topcontent {
+        padding: 20px 30px 30px 25px;
+    }
+
+    .right {
+        justify-content: center;
+    }
+
+    .formbox {
+        width: 80%;
+    }
+}
+
+
+@media screen and (max-width:1082px) {
+    .left {
+        width: 80%;
+    }
+
+    .right {
+        width: 80%;
+    }
+    .buttonbox1 .buttonsign {
+        padding: 5px 225px;
+    }
+
+    .buttonbox1 .buttonlog {
+        padding: 5px 230px;
+    }
+
+    
+}
+@media screen and (max-width:1024px){
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+    .right {
+        width: 80%;
+        justify-content: center;
+    }
+    .buttonbox1 .buttonsign {
+        padding: 5px 225px;
+    }
+
+    .buttonbox1 .buttonlog {
+        padding: 5px 230px;
+    }
+}
+@media screen and (max-width:1008px){
+    .right{
+        width: 100%;
+        justify-content: center;
+    }
+    .buttonbox1 .buttonsign {
+        padding: 5px 250px;
+    }
+
+    .buttonbox1 .buttonlog {
+        padding: 5px 250px;
+    }
+}
+@media screen and (max-width:883px){
+    .buttonbox1 .buttonsign {
+        padding: 5px 235px;
+    }
+
+    .buttonbox1 .buttonlog {
+        padding: 5px 235px;
+    }
+}
+@media screen and (max-width:838px){
+    .buttonbox1 .buttonsign {
+        padding: 5px 220px;
+    }
+
+    .buttonbox1 .buttonlog {
+        padding: 5px 220px;
+    }
+}
+@media screen and (max-width:790px){
+    .buttonbox1 .buttonsign {
+        padding: 5px 210px;
+    }
+
+    .buttonbox1 .buttonlog {
+        padding: 5px 210px;
+    }
+}
+@media screen and (max-width:768px){
+    .container1{
+        padding: 0%;
+    }
+    form{
+        margin: 0px auto;
+    }
+    .buttonbox1 .buttonsign {
+        padding: 5px 210px;
+    }
+
+    .buttonbox1 .buttonlog {
+        padding: 5px 215px;
+    }
+    /* .logtwitter{
+        margin-left: 30px;
+    } */
+    form{
+        padding: 0px 20px;
+    }
+    .inputbox1{
+        padding: 5px;
+    }
+    .inputbox{
+        width: 100%;
+    }
+    .headerbox1{
+        display: none;
+    }
+    .userProfile{
+        width:30%;
+    }
+    .userCard{
+        width: 65%;
+    }
+    .userFollower{
+        width: 50%;
+    }
+    #cancelButton1{
+        right: 170px;
+    }
+}
+@media screen and (max-width:758px){
+    .buttonbox1 .buttonsign {
+        padding: 5px 200px;
+    }
+
+    .buttonbox1 .buttonlog {
+        padding: 5px 205px;
+    }
+}
+@media screen and (max-width:729px){
+    .buttonbox1 .buttonsign {
+        padding: 5px 190px;
+    }
+
+    .buttonbox1 .buttonlog {
+        padding: 5px 195px;
+    }
+}
+@media screen and (max-width:700px){
+    .buttonbox1 .buttonsign {
+        padding: 5px 170px;
+    }
+
+    .buttonbox1 .buttonlog {
+        padding: 5px 175px;
+    }
+}
+@media screen and (max-width:634px){
+    .buttonbox1 .buttonsign {
+        padding: 5px 150px;
+    }
+
+    .buttonbox1 .buttonlog {
+        padding: 5px 155px;
+    }
+}
+@media screen and (max-width:572px){
+    .buttonbox1 .buttonsign {
+        padding: 5px 140px;
+    }
+
+    .buttonbox1 .buttonlog {
+        padding: 5px 145px;
+    }
+}
+@media screen and (max-width:540px){
+    .buttonbox1 .buttonsign {
+        padding: 5px 130px;
+    }
+
+    .buttonbox1 .buttonlog {
+        padding: 5px 135px;
+    }
+}
+@media screen and (max-width:510px){
+    .buttonbox1 .buttonsign {
+        padding: 5px 120px;
+    }
+
+    .buttonbox1 .buttonlog {
+        padding: 5px 125px;
+    }
+}
+@media screen and (max-width:477px){
+    .buttonbox1 .buttonsign {
+        padding: 5px 110px;
+    }
+
+    .buttonbox1 .buttonlog {
+        padding: 5px 115px;
+    }
+}
+@media screen and (max-width:447px){
+    .buttonbox1 .buttonsign {
+        padding: 5px 100px;
+    }
+
+    .buttonbox1 .buttonlog {
+        padding: 5px 105px;
+    }
+    .inputbox1{
+        padding: 0px;
+    }
+    .inputbox{
+        width: 100%;
+    }
+    header{
+        padding: 0px 0px 0px 20px;
+    }
+    .IditprofileButton{
+        top: 270px;
+        right: 20px;
+    }
+    #cancelButton1{
+        right: 100px;
+    }
+    .saveProfile{
+        right: 3%;
+    }
+    .userProfile{
+        width:80%;
+    }
+    .userCard{
+        width: 100%;
+        margin: 50px 0px;
+    }
+    .userFollower{
+        width: 100%;
+    }
+    .container1 {
+        width: 100%;
+        padding: 10px;
+    }
+}
+@media screen and (max-width:425px){
+    .userProfile{
+        width:80%;
+    }
+    .userCard{
+        width: 100%;
+    }
+    .userFollower{
+        width: 100%;
+    }
+    .userCardName{
+        margin-right: 30px;
+        font-size: 15px;
+    }
+    .userCardReplyName{
+        color: #1DA1F2;
+        font-size: 15px;
+    }
+    .container1 {
+        width: 100%;
+    }
+}
+@media screen and (max-width:377px){
+    .IditprofileButton{
+        top: 270px;
+        right: 3%;
+    }
+}
+@media screen and (max-width:377px){
+    .buttonbox1 .buttonsign {
+        padding: 5px 80px;
+    }
+
+    .buttonbox1 .buttonlog {
+        padding: 5px 85px;
+    }
+    .topcontent{
+        font-size: 25px;
+    }
+}
