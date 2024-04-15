@@ -738,7 +738,7 @@ header{
     }
 
     .buttonbox1 .buttonlog {
-        padding: 10px 190px;
+        padding: 10px 196px;
     }
     .IditprofileButton{
         top: 270px;
@@ -856,11 +856,11 @@ header{
         justify-content: center;
     }
     .buttonbox1 .buttonsign {
-        padding: 5px 250px;
+        padding: 5px 270px;
     }
 
     .buttonbox1 .buttonlog {
-        padding: 5px 250px;
+        padding: 5px 277px;
     }
 }
 @media screen and (max-width:883px){
